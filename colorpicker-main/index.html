@@ -10,41 +10,35 @@
 </head>
 <body>
   
-  <div style="display: flex; flex-direction: row;">
-  <div class="container" style=" box-shadow: 10px 15px 15px #f06f9b">
-    
-    <div class="picker" style="display: flex; flex-direction: column; box-shadow: 0 4px 9px rgba(173, 28, 28, 0.2);">
-      <div style="display: flex; flex-direction: row;">
-        <i class="fa fa-smile-o" aria-hidden="true" style=" color: #f9c9d9; font-size: 30px; margin-right: 10px; margin-top: 3px;"></i>
-      <h3 style="color: #f9c9d9; margin-bottom: 30px; margin-top: 8px;">Color Picker</h3>
-      
-      </div>
-      <div >
-      <button id="picker-btn" >
-        <i class="fa fa-paint-brush" aria-hidden="true" ></i> Pick Color
+  <div class="container">
+    <div class="header">
+      <i class="fa fa-paint-brush" aria-hidden="true"></i>
+      <h1>Color Picker</h1>
+    </div>
+    <div class="picker">
+      <button id="picker-btn" class="btn-primary">
+        <i class="fa fa-paint-brush"></i> Pick Color
       </button>
-      <button id="export-btn">
-        <i class="fa fa-download" aria-hidden="true"></i> Export Color
+      <button id="export-btn" class="btn-secondary">
+        <i class="fa fa-download"></i> Export Colors
       </button>
-      </div>
-      
     </div>
     <div class="color-list hide">
       <header>
         <span class="title">Picked Colors</span>
-        <button id="clear-btn">Clear</button>
+        <button id="clear-btn" class="btn-clear">Clear</button>
       </header>
       <ul class="all-colors"></ul>
     </div>
+    <footer>
+      <p>Color Picker Extension | Made with  Akhil ❤️</p>
+    </footer>
   </div>
-  
-  
-  <div id="info-message" style=" position: fixed; right: 40px; top: 20px; display: flex; flex-direction: column; align-items: left; box-shadow: 10px 10px 6px rgba(16, 239, 225, 0.2);">
-    <i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 8px;"></i>
-   
-</div>
+
+  <div id="info-message" class="info-message">
+    <!-- Add any relevant messages or tips here -->
   </div>
-  
+
   <script src="index.js"></script>
 </body>
 </html>
